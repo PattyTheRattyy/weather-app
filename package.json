@@ -1,22 +1,22 @@
 {
-  "name": "restaurant-webpage",
+  "name": "weather-app",
   "version": "1.0.0",
-  "description": "practice with dom manipulation and using webpack!",
+  "description": "practice using APIs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PattyTheRattyy/restaurant-webpage.git"
+    "url": "git+https://github.com/PattyTheRattyy/weather-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PattyTheRattyy/restaurant-webpage/issues"
+    "url": "https://github.com/PattyTheRattyy/weather-app/issues"
   },
-  "homepage": "https://github.com/PattyTheRattyy/restaurant-webpage#readme",
+  "homepage": "https://github.com/PattyTheRattyy/weather-app#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-loader": "^5.1.0",
@@ -25,5 +25,10 @@
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   }
 }
