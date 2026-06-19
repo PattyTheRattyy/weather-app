@@ -60,26 +60,31 @@ input:focus:user-invalid {
 
 .temp-row {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 
   height: 100px;
   width: 100%;
+  position: relative;
 }
 
 .temp-changer {
   margin-left: 20px;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-radius: 20px;
+  border-radius: 15px;
+  color: white;
 
   padding: 5px 10px;
   font-size: 20px;
 
-  width: 100px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
 }
 
 .search-box-aligner {
@@ -94,16 +99,22 @@ input:focus:user-invalid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 
   height: 500px;
-  width: 400px;
+  width: 500px;
   margin: 100px;
   background-color: rgb(128, 128, 128);
 
   border-radius: 18px;
 
   font-size: 25px;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 .search {
   display: flex;
@@ -112,7 +123,7 @@ input:focus:user-invalid {
   align-items: center;
 }
 #searchInput {
-  max-width: 250px;
+  width: 250px;
   height: 40px;
   border-radius: 20px;
   text-align: center;
@@ -133,14 +144,16 @@ input:focus:user-invalid {
 }
 
 .icon > img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
-.temp-icon {
+.search-middle {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .max-icon .location,
@@ -157,12 +170,47 @@ input:focus:user-invalid {
   align-items: center;
 }
 
-.min-max {
-  gap: 25px;
+.location {
+  font-size: 50px;
+  font-weight: 500;
 }
 
-.min-top {
+.min-max {
+  gap: 25px;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.min-top,
+.max-top {
+  gap: 2.5px;
+}
+
+.min-temp,
+.max-temp {
+  font-size: 50px;
+}
+
+.temp-icon {
+  display: flex;
+  justify-self: start;
+  align-self: start;
+
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.temp {
+  font-size: 75px;
+  font-weight: 500;
+}
+
+.condition {
+  font-size: 25px;
+  color: rgb(216, 216, 216);
 }
 
 .min,
@@ -171,4 +219,10 @@ input:focus:user-invalid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.min-bottom,
+.max-bottom {
+  font-size: 25px;
+  color: rgb(216, 216, 216);
 }
