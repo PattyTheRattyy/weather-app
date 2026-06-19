@@ -2,5 +2,173 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: url("https://byteandbait.github.io/weather-app/76183d22af78ff37820dfeeb29354336.jpg");
+  background-size: cover;
+
+  color: white;
+}
+
+/* validation */
+input[type="text"] {
+  appearance: none;
+
+  width: 100%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  box-sizing: border-box;
+}
+
+/* invalid fields */
+input:user-invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus:user-invalid {
+  outline: none;
+}
+
+/* error message styles */
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+.temp-row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  height: 100px;
+  width: 100%;
+}
+
+.temp-changer {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+
+  padding: 5px 10px;
+  font-size: 20px;
+
+  width: 100px;
+  height: 75px;
+}
+
+.search-box-aligner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  height: 500px;
+  width: 400px;
+  margin: 100px;
+  background-color: rgb(128, 128, 128);
+
+  border-radius: 18px;
+
+  font-size: 25px;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#searchInput {
+  max-width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+.searchBtn {
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+}
+.glass {
+  background-color: #c2fdff4f;
+  border: 1px solid #dcdcdc4f;
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 5px 1px #0000004f;
+}
+
+.icon > img {
+  width: 50px;
+  height: 50px;
+}
+
+.temp-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.max-icon .location,
+.icon,
+.temp,
+.condition,
+.min-max,
+.min-top,
+.min-bottom,
+.max-top,
+.max-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.min-max {
+  gap: 25px;
+}
+
+.min-top {
+  display: flex;
+}
+
+.min,
+.max {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

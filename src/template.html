@@ -7,11 +7,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <p>hello</p>
+    <main>
+      <div class="temp-row">
+        <button class="temp-changer">C</button>
+      </div>
+      <div class="search-box-aligner">
+        <div class="search-box glass">
+          <form novalidate>
+            <div class="search">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Ottawa, ON"
+                required
+              />
+              <span class="error" aria-live="polite"></span>
+              <button class="searchBtn glass">Search</button>
+            </div>
+          </form>
+          <div class="location">Enter a Location</div>
+          <div class="icon">
+            <img src="../assets/rainy.png" alt="rainy cloud!" />
+            <!-- Rain icons created by bqlqn - Flaticon -->
+          </div>
+          <div class="temp">10</div>
+          <div class="conditon">Sunny</div>
+          <div class="min-max">
+            <div class="min">
+              <div class="min-top">
+                <div class="temp-icon">↓</div>
+                <div class="min-temp">5</div>
+              </div>
+              <div class="min-bottom">Min</div>
+            </div>
+            <div class="max">
+              <div class="max-top">
+                <div class="temp-icon">↑</div>
+                <div class="max-temp">15</div>
+              </div>
+              <div class="max-bottom">Max</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
