@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  <script defer src="main.js"></script></head>
+
+  <body>
+    <main>
+      <div class="temp-row">
+        <button class="temp-changer glass">C</button>
+        <div class="search-bar">
+          <form novalidate>
+            <div class="search">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Ottawa, ON"
+                required
+              />
+              <span class="error" aria-live="polite"></span>
+              <button class="searchBtn glass">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="search-box-aligner">
+        <div class="search-box glass">
+          <div class="location"></div>
+          <div class="icon">
+            <img src="24dfe91465fde2728891.png" class="iconImg" />
+          </div>
+          <div class="search-middle">
+            <div class="temp">0 °C</div>
+            <div class="condition">Sunny</div>
+          </div>
+          <div class="min-max">
+            <div class="min">
+              <div class="min-top">
+                <div class="temp-icon">↓</div>
+                <div class="min-temp">0 °C</div>
+              </div>
+              <div class="min-bottom">Min</div>
+            </div>
+            <div class="max">
+              <div class="max-top">
+                <div class="temp-icon">↑</div>
+                <div class="max-temp">0 °C</div>
+              </div>
+              <div class="max-bottom">Max</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
