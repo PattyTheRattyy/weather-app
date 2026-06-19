@@ -1,4 +1,4 @@
-# restaurant-webpage
+# weather app
 
 practice using APIs
 
